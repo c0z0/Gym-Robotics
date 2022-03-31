@@ -51,7 +51,7 @@ class HandEnv(robot_env.RobotEnv):
         for idx, value in enumerate(lookat):
             self.viewer.cam.lookat[idx] = value
         self.viewer.cam.distance = 0.5
-        self.viewer.cam.azimuth = 0.0
+        self.viewer.cam.azimuth = 90.0
         self.viewer.cam.elevation = -25.0
 
     def render(self, mode="human", width=500, height=500):
